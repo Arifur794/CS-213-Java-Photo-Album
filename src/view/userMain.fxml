@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.22122571001494767" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.UserMainController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="175.0" SplitPane.resizableWithParent="false">
+         <children>
+            <Button fx:id="logOut" layoutX="35.0" layoutY="261.0" mnemonicParsing="false" onAction="#logOutButtonClicked" text="Log Out">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="52.0" layoutY="44.0" text="user:">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="username" layoutX="16.0" layoutY="76.0" prefHeight="32.0" prefWidth="116.0" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="442.0" prefWidth="526.0">
+         <children>
+            <ListView fx:id="albumListView" layoutY="-2.0" prefWidth="292.0" />
+            <Button fx:id="deleteButton" layoutX="142.0" layoutY="341.0" mnemonicParsing="false" onAction="#deleteButtonClicked" prefHeight="42.0" prefWidth="61.0" style="-fx-background-color: red;" text="Delete Album" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <AnchorPane layoutX="292.0" prefHeight="335.0" prefWidth="169.0">
+               <children>
+                  <Label fx:id="albums" layoutX="73.0" layoutY="44.0" text="Albums">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="addSuccess" layoutX="45.0" layoutY="212.0" text="ADD SUCCESSFUL" textFill="#2bee34" visible="false" />
+                  <Label fx:id="addFail" layoutX="45.0" layoutY="212.0" text="ALBUM EXISTS. TRY AGAIN" textFill="#d01313" visible="false" />
+                  <AnchorPane fx:id="createAlbumAnchor" layoutY="7.0" prefHeight="335.0" prefWidth="169.0" visible="false">
+                     <children>
+                        <Label layoutX="46.0" layoutY="39.0" text="Create Album">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="albumCreate" layoutX="46.0" layoutY="229.0" mnemonicParsing="false" onAction="#OKButtonClicked" text="OK">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="back" layoutX="121.0" layoutY="229.0" mnemonicParsing="false" onAction="#backButtonClicked" text="Back">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="newAlbumName" layoutX="38.0" layoutY="115.0" promptText="Album name" />
+                        <Label fx:id="mustInputText" layoutX="45.0" layoutY="160.0" text="MUST INPUT TEXT" textFill="#cd1515" visible="false" />
+                     </children>
+                  </AnchorPane>
+                  <Separator layoutX="-6.0" layoutY="333.0" orientation="VERTICAL" prefHeight="66.0" prefWidth="13.0" />
+                  <AnchorPane fx:id="searchAnchor" layoutX="5.0" layoutY="5.0" prefHeight="386.0" prefWidth="214.0">
+                     <children>
+                        <Label layoutX="74.0" layoutY="35.0" text="Search">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="76.0" layoutY="67.0" text="Date Range" />
+                        <Label layoutX="91.0" layoutY="123.0" text="to" />
+                        <Button fx:id="searchOK" layoutX="48.0" layoutY="282.0" mnemonicParsing="false" onAction="#searchOKButtonClicked" text="OK" />
+                        <Button fx:id="searchBack" layoutX="118.0" layoutY="282.0" mnemonicParsing="false" onAction="#searchBackButtonClicked" text="Back" />
+                        <DatePicker fx:id="lowEndDate" layoutX="20.0" layoutY="92.0" promptText="dd/mm/yyyy" />
+                        <DatePicker fx:id="highEndDate" layoutX="20.0" layoutY="148.0" promptText="dd/mm/yyyy" />
+                        <Label layoutX="85.0" layoutY="177.0" text="Tags" />
+                        <Button fx:id="searchOK" layoutX="50.0" layoutY="338.0" mnemonicParsing="false" onAction="#searchOKButtonClicked" text="OK" />
+                        <Button fx:id="searchBack" layoutX="111.0" layoutY="338.0" mnemonicParsing="false" onAction="#searchBackButtonClicked" text="Back" />
+                        <DatePicker fx:id="lowEndDate" layoutX="10.0" layoutY="92.0" promptText="dd/mm/yyyy" />
+                        <DatePicker fx:id="highEndDate" layoutX="10.0" layoutY="148.0" promptText="dd/mm/yyyy" />
+                        <ListView fx:id="tagsForSearch" layoutX="10.0" layoutY="194.0" prefHeight="85.0" prefWidth="192.0" />
+                        <Button fx:id="addTagButton" layoutX="31.0" layoutY="283.0" mnemonicParsing="false" onAction="#addButtonClicked" prefHeight="42.0" prefWidth="61.0" style="-fx-background-color: green;" text="Add Tag (Search)" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="deleteTagButton" layoutX="103.0" layoutY="283.0" mnemonicParsing="false" onAction="#deleteTagButtonClicked" prefHeight="42.0" prefWidth="78.0" style="-fx-background-color: red;" text="Delete Tag (Search)" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <Button fx:id="searchButton" layoutX="208.0" layoutY="341.0" mnemonicParsing="false" onAction="#searchButtonClicked" prefHeight="42.0" prefWidth="78.0" text="Search for Photo" textAlignment="CENTER" wrapText="true" />
+            <Button fx:id="editButton" layoutX="77.0" layoutY="341.0" mnemonicParsing="false" onAction="#editNameClicked" prefHeight="42.0" prefWidth="61.0" text="Edit Name" textAlignment="CENTER" wrapText="true" />
+            <Button fx:id="createButton" layoutX="6.0" layoutY="341.0" mnemonicParsing="false" onAction="#createButtonClicked" prefHeight="42.0" prefWidth="68.0" style="-fx-background-color: green;" text="Create Album" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
