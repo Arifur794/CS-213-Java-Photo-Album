@@ -38,7 +38,11 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.text.TextAlignment;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ButtonBar.ButtonData;
-
+/**
+ * Group105
+ * Arifur Rahman
+ * Monique Gordon
+ */
 public class UserMainController {
 
 	@FXML Button logOut;

@@ -1,5 +1,9 @@
 package view;
-
+/**
+ * Group105
+ * Arifur Rahman
+ * Monique Gordon
+ */
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;

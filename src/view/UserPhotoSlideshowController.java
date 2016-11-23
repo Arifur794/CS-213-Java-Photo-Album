@@ -33,7 +33,11 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
-
+/**
+ * Group105
+ * Arifur Rahman
+ * Monique Gordon
+ */
 public class UserPhotoSlideshowController {
 	
 	@FXML Button forwardSlideshow;

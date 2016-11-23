@@ -7,7 +7,9 @@ import java.io.Serializable;
 public class Album implements Serializable {
 	
 	/**
-	 * 
+	 * Group105
+	 * Arifur Rahman
+	 * Monique Gordon
 	 */
 	private static final long serialVersionUID = 1L;
 	String name;

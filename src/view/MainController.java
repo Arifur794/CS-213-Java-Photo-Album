@@ -11,7 +11,11 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
 import javafx.scene.control.ButtonType;
 import javafx.scene.layout.AnchorPane;
-
+/**
+ * Group105
+ * Arifur Rahman
+ * Monique Gordon
+ */
 public class MainController {
 	@FXML AdminController adminController;
 	@FXML LoginController loginController;

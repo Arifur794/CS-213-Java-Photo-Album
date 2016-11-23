@@ -17,6 +17,12 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.control.Alert.AlertType;
 public class AdminController {
 	
+	
+	/**
+	 * Group105
+	 * Arifur Rahman
+	 * Monique Gordon
+	 */
 	MainController main = new MainController();
 	
 	@FXML Button logOut;

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description" xmi:id="_8rhVcLEiEeat3MBMblj62Q" selectedViews="_9aQqwLEiEeat3MBMblj62Q _9btcQLEiEeat3MBMblj62Q _9cUgQLEiEeat3MBMblj62Q _9c8LULEiEeat3MBMblj62Q _9dfk8LEiEeat3MBMblj62Q" version="11.0.0.201604141600">
+  <semanticResources>build.fxbuild</semanticResources>
+  <semanticResources>doc/Javadoc/stylesheet.css</semanticResources>
+  <semanticResources>src/My.view</semanticResources>
+  <semanticResources>src/app/My.uml</semanticResources>
+  <semanticResources>src/view/application.css</semanticResources>
+  <semanticResources>my.uml</semanticResources>
+  <semanticResources>my1.uml</semanticResources>
+  <ownedViews xmi:type="viewpoint:DView" xmi:id="_9aQqwLEiEeat3MBMblj62Q">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Reused']"/>
+  </ownedViews>
+  <ownedViews xmi:type="viewpoint:DView" xmi:id="_9btcQLEiEeat3MBMblj62Q">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']"/>
+  </ownedViews>
+  <ownedViews xmi:type="viewpoint:DView" xmi:id="_9cUgQLEiEeat3MBMblj62Q">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']"/>
+  </ownedViews>
+  <ownedViews xmi:type="viewpoint:DView" xmi:id="_9c8LULEiEeat3MBMblj62Q">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Review']"/>
+  </ownedViews>
+  <ownedViews xmi:type="viewpoint:DView" xmi:id="_9dfk8LEiEeat3MBMblj62Q">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Extend']"/>
+  </ownedViews>
+</viewpoint:DAnalysis>

@@ -1,5 +1,9 @@
 package view;
-
+/**
+ * Group105
+ * Arifur Rahman
+ * Monique Gordon
+ */
 import java.awt.Desktop;
 import java.awt.image.*;
 import java.io.File;

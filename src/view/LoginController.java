@@ -16,7 +16,11 @@ import javafx.scene.control.Alert;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.control.Alert.AlertType;
 import view.MainController;
-
+/**
+ * Group105
+ * Arifur Rahman
+ * Monique Gordon
+ */
 public class LoginController{
 	
 	@FXML MainController main = new MainController();

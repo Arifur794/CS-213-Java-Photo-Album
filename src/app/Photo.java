@@ -22,7 +22,9 @@ import javafx.scene.image.ImageView;
 public class Photo implements Serializable {
 	
 	/**
-	 * 
+	 * Group105
+	 * Arifur Rahman
+	 * Monique Gordon
 	 */
 	private static final long serialVersionUID = 1L;
 	transient Image image;

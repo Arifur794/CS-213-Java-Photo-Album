@@ -44,7 +44,11 @@ import javafx.scene.layout.Pane;
 import javafx.scene.layout.TilePane;
 import javafx.scene.layout.VBox;
 import javafx.scene.control.Alert.AlertType;
-
+/**
+ * Group105
+ * Arifur Rahman
+ * Monique Gordon
+ */
 public class UserMovePhotoController {
 	@FXML Button OKButton;
 	@FXML Button cancelButton;

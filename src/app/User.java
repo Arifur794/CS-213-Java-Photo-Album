@@ -5,7 +5,9 @@ import java.util.ArrayList;
 
 public class User implements Serializable {
 	/**
-	 * 
+	 * Group105
+	 * Arifur Rahman
+	 * Monique Gordon
 	 */
 	private static final long serialVersionUID = 1L;
 	//holds all information associated with a user
